@@ -1,7 +1,7 @@
 # Introduction
 This C++ program simulates the "Game of Life" created by John Conway. It allows the user to initialize a grid with living and dead cells, then observes how these cells evolve over a series of generations based on predefined rules. The game runs until the user decides to exit, providing an engaging way to visualize cellular automata dynamics.
 
-# Detailed Explanation
+#  Explanation
 The program begins with the start function, which serves as the entry point after main. This function displays a menu using Print_Menu and captures the user's choice through the User_Choice function. If the user opts to start the game, they are prompted to enter a file name for saving the initial configuration. The program then calls reading_file to handle file operations, where it writes the number of generations and coordinates to the file and reads them back for confirmation.
 
 The Makegrid function initializes the grid by setting all cells to zero, indicating that all cells are initially dead. The UpdateGrid function updates the grid based on the user-provided coordinates, setting specified cells to one (alive). This function also displays the initial state of the grid, helping users visualize the starting configuration.
